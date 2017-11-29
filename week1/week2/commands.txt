@@ -1,5 +1,0 @@
-ls
-pwd
-cat
-ls
-pwd
