@@ -1,4 +1,0 @@
-cat
-dog 
-echo dog
-hamster
