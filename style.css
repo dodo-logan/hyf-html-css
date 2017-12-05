@@ -1,0 +1,145 @@
+* {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-size: 3em;
+    font-family: fantasy;
+    color:purple
+}
+h3{
+    font-size: 1.5em
+}
+img{
+    width: 100%;
+    opacity:0.5
+
+}
+#grid-floats .grid-item:first-of-type img{
+    width: 60%
+
+}
+#grid-flex .grid-item:first-of-type img{
+    width: 60%
+
+}
+img:hover{
+    opacity:1;
+}
+
+ul{
+    list-style-type: none;
+}
+h2{
+    clear: both;
+}
+.grid-item{
+    border: 5%;
+    box-shadow: 5px 5px 5px purple
+}
+
+
+#grid-floats .grid-item:first-of-type{
+    float: left;
+    margin: 1%;
+    border: 1px ridge pink;
+    width: calc(48% - 2px);
+    height: 500px
+
+}
+#grid-floats .grid-item:not(first-of-type){
+    float: left;
+    margin: 1%;
+    border:1px ridge pink;
+    width: calc(23% - 2px);
+    height: 500px
+
+}
+@media (min-width: 580px) and (max-width:960px){
+    #grid-floats .grid-item:nth-of-type(-n+2){
+        width:calc(48% - 2px);
+    }
+    #grid-floats .grid-item:nth-of-type(n+3){
+        width:calc(31.3333% - 2px);
+    }
+#grid-floats .grid-item p{
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100px
+    }
+    
+}
+@media (max-width:579px){
+    #grid-floats .grid-item:first-of-type{
+        width: calc(98% - 2px);
+
+    }
+    #grid-floats .grid-item:not(first-of-type){
+        width: calc(48% - 2px);
+
+    }
+    #grid-floats .grid-item p{
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100px
+    }
+    
+}
+
+#grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+}
+#grid-flex .grid-item:first-of-type{
+
+    margin: 1%;
+    border: 1px ridge pink;
+    width: calc(48% - 2px);
+    height: 500px
+
+}
+#grid-flex .grid-item:not(first-of-type){
+
+    margin: 1%;
+    border:1px ridge pink;
+    width: calc(23% - 2px);
+    height: 500px
+
+}
+
+@media (min-width: 580px) and (max-width:960px){
+    #grid-flex .grid-item:nth-of-type(-n+2){
+        width:calc(48% - 2px);
+    }
+    #grid-flex .grid-item:nth-of-type(n+3){
+        width:calc(31.3333% - 2px);
+    }
+#grid-flex .grid-item p{
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100px
+    }
+    
+}
+@media (max-width:579px){
+    #grid-flex .grid-item:first-of-type{
+        width: calc(98% - 2px);
+
+    }
+    #grid-flex .grid-item:not(first-of-type){
+        width: calc(48% - 2px);
+
+    }
+    #grid-flex .grid-item p{
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100px
+    }
+    
+}
